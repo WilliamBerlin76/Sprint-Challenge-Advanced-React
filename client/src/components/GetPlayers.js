@@ -21,7 +21,7 @@ class Players extends React.Component{
 
     render(){
         return(
-            <div className='playerCard'>
+            <div data-testid='cards'className='playerCard'>
                {this.state.player.map(item => {
                    return(
                        <>
