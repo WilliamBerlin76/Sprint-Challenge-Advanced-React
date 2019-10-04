@@ -21,13 +21,15 @@ class Players extends React.Component{
 
     render(){
         return(
-            <div data-testid='cards'className='playerCard'>
+            <div data-testid='cards'className='cards-container'>
                {this.state.player.map(item => {
                    return(
-                       <>
-                        <h3 key={item.id}>Name: {item.name}</h3>
-                        <p>Country: {item.country}</p>
-                       </>
+                       <div className="card">
+                        <h3 className="label">Name:</h3>
+                        <h3 key={item.id}>{item.name}</h3>
+                        <h4 className="label">Country:</h4>
+                        <p>{item.country}</p>
+                       </div>
                    )
                })}
             </div>
