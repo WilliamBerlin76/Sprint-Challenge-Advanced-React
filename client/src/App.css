@@ -2,5 +2,6 @@
   text-align: center;
 }
 .red-mode{
-  background: red;
+  background: rgb(141, 5, 5);
+  color: rgb(219, 248, 182);
 }

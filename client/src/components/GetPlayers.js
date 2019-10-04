@@ -24,7 +24,10 @@ class Players extends React.Component{
             <div className='playerCard'>
                {this.state.player.map(item => {
                    return(
-                       <h3 key={item.id}>{item.name}</h3>
+                       <>
+                        <h3 key={item.id}>Name: {item.name}</h3>
+                        <p>Country: {item.country}</p>
+                       </>
                    )
                })}
             </div>
